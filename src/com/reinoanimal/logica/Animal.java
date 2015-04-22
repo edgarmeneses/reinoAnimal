@@ -4,6 +4,10 @@ package com.reinoanimal.logica;
 public class Animal {
 	
 	/**
+	 * nombre del animal (gato, perro, leon...)
+	 */
+	private String nombre;
+	/**
 	 * raza del animal
 	 */
 	private String raza;
@@ -61,5 +65,20 @@ public class Animal {
 		this.tipoReproduccion.setTipo(tipo);
 	}
 
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	@Override
+	public String toString() {
+		return "Animal "+ nombre +"\n"+ "[raza=" + raza +"\n"+ ", tipoAlimantacion="
+				+ tipoAlimantacion +  "\n"+ ", tipoEstructura=" + tipoEstructura
+				+"\n"+ ", tipoReproduccion=" + tipoReproduccion + "]";
+	}
+	
 	
 }//end Animal

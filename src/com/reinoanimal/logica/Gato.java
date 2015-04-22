@@ -13,6 +13,7 @@ public class Gato extends BuilderAnimal {
 		crearEstructura();
 		crearRaza();
 		crearReproduccion();
+		crearNombre();
 
 	}
 
@@ -48,5 +49,10 @@ public class Gato extends BuilderAnimal {
 		
 		String descripcion="Los gatos tienen reproducción sexual con fecundación interna.";
 		animal.setTipoReproduccion(descripcion, TipoReproduccion.oviviparos);
+	}
+
+	@Override
+	public void crearNombre() {
+		animal.setNombre("Gato " + animal.getRaza());
 	}
 }//end Gato

@@ -26,6 +26,8 @@ public abstract class BuilderAnimal {
 	 * metodo para crear la raza
 	 */
 	public abstract void crearRaza();
+	
+	public abstract void crearNombre();
 
 	/**
 	 * metodo para crear el tipo de reproduccion

@@ -10,6 +10,7 @@ public class Hamsters extends BuilderAnimal {
 		crearEstructura();
 		crearRaza();
 		crearReproduccion();
+		crearNombre();
 	}
 	
 	/**
@@ -40,5 +41,10 @@ public class Hamsters extends BuilderAnimal {
 	public void crearReproduccion(){
 		String descripcion = "Se realiza a travez de copulacion";
 		animal.setTipoReproduccion(descripcion, TipoReproduccion.viviparos);
+	}
+
+	@Override
+	public void crearNombre() {
+		animal.setNombre("Hamsters "+ animal.getRaza());
 	}
 }//end Hamsters

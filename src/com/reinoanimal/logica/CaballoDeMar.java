@@ -11,6 +11,7 @@ public class CaballoDeMar extends BuilderAnimal {
 		crearEstructura();
 		crearRaza();
 		crearReproduccion();
+		crearNombre();
 	}
 
 	
@@ -43,5 +44,10 @@ public class CaballoDeMar extends BuilderAnimal {
 	public void crearReproduccion(){
 		String descripcion = "Se reproducen desde la primavera hasta los meses de verano, En esta epoco la hembra transpasa los huevos a la bolsa ventral de los machos";
 		animal.setTipoReproduccion(descripcion, TipoReproduccion.oviparos);
+	}
+
+	@Override
+	public void crearNombre() {
+		animal.setNombre("Caballo de Mar "+ animal.getRaza());
 	}
 }//end CaballoDeMar
