@@ -7,8 +7,11 @@ package com.reinoanimal.logica;
  */
 public class CaballoDeMar extends BuilderAnimal {
 	
-	public CaballoDeMar(){
-		
+	private String raza;
+	
+	public CaballoDeMar(String razo){
+		super();
+		this.raza=razo;
 	}
 
 	
@@ -16,27 +19,30 @@ public class CaballoDeMar extends BuilderAnimal {
 	 * metodo para crear el tipo de alimentacion
 	 */
 	public void crearAlimentacion(){
-
+		String caracteristica = "Se alimentan de pequeños organismos pelágicos que cazan al acecho, camuflados entre las algas, y que succionan con sus largos hocicos.";
+		animal.setTipoAlimantacion(new Alimentacion(caracteristica, TipoAlimentacion.carnivoro));
 	}
 
 	/**
 	 * metodo para crear el tipo de estructura
 	 */
 	public void crearEstructura(){
-
+		animal.setTipoEstructura(new Vertebrado(TipoGrupo.peces));
 	}
 
 	/**
 	 * metodo para crear la raza
 	 */
 	public void crearRaza(){
-
+		animal.setRaza(raza);
+		//"Syngnathidae"
 	}
 
 	/**
 	 * metodo para crear el tipo de reproduccion
 	 */
 	public void crearReproduccion(){
-
+		String descripcion = "Se reproducen desde la primavera hasta los meses de verano, En esta epoco la hembra transpasa los huevos a la bolsa ventral de los machos";
+		animal.setTipoReproduccion(new Reproduccion(descripcion, TipoReproduccion.oviparos));
 	}
 }//end CaballoDeMar

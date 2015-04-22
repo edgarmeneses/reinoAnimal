@@ -18,7 +18,7 @@ public class Gato extends BuilderAnimal {
 	 * metodo para crear el tipo de alimentacion
 	 */
 	public void crearAlimentacion(){
-
+		
 	}
 
 	/**

@@ -16,8 +16,9 @@ public class Vertebrado extends Estructura {
 	
 	private static final String DEFAULT_NOMBRE = "Vertebrado";
 
-	public Vertebrado(){
+	public Vertebrado(TipoGrupo grupo){
 		super(DEFAULT_CARACTERISTICA, DEFAULT_NOMBRE);
+		this.grupo=grupo;
 	}
 	
 	public TipoGrupo getGrupo() {
