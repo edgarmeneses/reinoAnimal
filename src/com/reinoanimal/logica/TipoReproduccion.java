@@ -1,10 +1,5 @@
 package com.reinoanimal.logica;
 
-/**
- * @author Edgar Meneses
- * @version 1.0
- * @created 21-abr-2015 10:21:44 p.m.
- */
 public enum TipoReproduccion {
 	/**
 	 * los animales ovíparos se forman y desarrollan en el interior de un huevo que ha

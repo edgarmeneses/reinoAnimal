@@ -1,10 +1,5 @@
 package com.reinoanimal.logica;
 
-/**
- * @author Edgar Meneses
- * @version 1.0
- * @created 21-abr-2015 10:21:29 p.m.
- */
 public class CaballoDeMar extends BuilderAnimal {
 	
 	private String raza;

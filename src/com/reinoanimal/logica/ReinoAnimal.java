@@ -2,11 +2,7 @@ package com.reinoanimal.logica;
 
 import java.util.ArrayList;
 
-/**
- * @author Edgar Meneses
- * @version 1.0
- * @created 21-abr-2015 10:21:36 p.m.
- */
+
 public class ReinoAnimal {
 
 	private ArrayList<BuilderAnimal> animals;

@@ -1,10 +1,5 @@
 package com.reinoanimal.logica;
 
-/**
- * @author Edgar Meneses
- * @version 1.0
- * @created 21-abr-2015 10:21:42 p.m.
- */
 public enum TipoGrupo {
 	/**
 	 * tiene pelos en la superficie del cuerpo. En la mayoría de las especies de

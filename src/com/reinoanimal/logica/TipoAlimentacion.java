@@ -1,10 +1,6 @@
 package com.reinoanimal.logica;
 
-/**
- * @author Edgar Meneses
- * @version 1.0
- * @created 21-abr-2015 10:21:39 p.m.
- */
+
 public enum TipoAlimentacion {
 	/**
 	 * un herbívoro  es un animal que se alimenta principalmente de plantas. En la

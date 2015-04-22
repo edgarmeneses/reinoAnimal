@@ -1,10 +1,6 @@
 package com.reinoanimal.logica;
 
-/**
- * @author Edgar Meneses
- * @version 1.0
- * @created 21-abr-2015 10:21:33 p.m.
- */
+
 public class Hamsters extends BuilderAnimal {
 	private String raza ;
 	public Hamsters(String raza){
