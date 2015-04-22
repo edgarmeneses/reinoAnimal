@@ -1,6 +1,16 @@
 package com.reinoanimal.logica;
 
-
+/**
+ * Clase animla el cual esta compuesto por:
+ * un tipo de alimentacion, un tipo de estructura,
+ * un tipo de reproduccion
+ * estos elementos permiten clasificar en cisrtos grupos a todos los animales
+ * tambien necesita la raza junto con el nombre del animal
+ * 
+ * Dentro del patron builder este es el product
+ * @author Edgar Meneses
+ * @author Diana Gonzalez
+ */
 public class Animal {
 	
 	/**
@@ -20,38 +30,60 @@ public class Animal {
 	 */
 	private Estructura tipoEstructura;
 	/**
-	 * tipo de reproduccion del animal
+	 * tipo de reproduccion delase animal
 	 */
 	private Reproduccion tipoReproduccion;
-
+	/**
+	 * constructor de la clase Animal.java
+	 * 
+	 */
 	public Animal(){
 		
 		
 		tipoAlimantacion = new Alimentacion();
 		tipoReproduccion = new Reproduccion();
 	}
-
+	/**
+	 * permite obtener la raza
+	 * @return
+	 */
 	public String getRaza() {
 		return raza;
 	}
-
+	/**
+	 * permite asignar una raza
+	 * @param raza
+	 */
 	public void setRaza(String raza) {
 		this.raza = raza;
 	}
-
+	/**
+	 * retorna el tipo de alimentacion
+	 * @return
+	 */
 	public Alimentacion getTipoAlimantacion() {
 		return tipoAlimantacion;
 	}
-
+	/**
+	 * permite asignar un tipo de alimento
+	 * @param descripcion
+	 * @param tipo
+	 */
 	public void setTipoAlimantacion(String descripcion, TipoAlimentacion tipo) {
 		this.tipoAlimantacion.setDescripcion(descripcion);
 		this.tipoAlimantacion.setTipo(tipo);
 	}
-
+	/**
+	 * retorna el tipo de estructura
+	 * @return
+	 */
 	public Estructura getTipoEstructura() {
 		return tipoEstructura;
 	}
-
+	/**
+	 * permite asignar un tipo de estructura
+	 * @param tipoEstructura
+	 */
 	public void setTipoEstructura(Estructura tipoEstructura) {
 		this.tipoEstructura = tipoEstructura;
 	}

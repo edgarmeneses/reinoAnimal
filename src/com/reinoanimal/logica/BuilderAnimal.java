@@ -2,16 +2,17 @@ package com.reinoanimal.logica;
 
 
 public abstract class BuilderAnimal {
-
+	/**
+	 * animal que se va a constroir con todas sus partes
+	 * actua como una interfaz dando las caracteristicas que debe tener cualquier
+	 * construccion de un aimal
+	 */
 	protected Animal animal;
 
 	public BuilderAnimal(){
 		animal = new Animal();
 	}
 
-	public void finalize() throws Throwable {
-
-	}
 	/**
 	 * metodo para crear el tipo de alimentacion
 	 */

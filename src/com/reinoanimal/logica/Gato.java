@@ -1,10 +1,24 @@
 package com.reinoanimal.logica;
 
-
+/**
+ * Es una animal especifico dentro de la logica del negocio
+ * hereda de BuilderAnimal
+ * dentro del patron builder es un BuilderConcret
+ * 
+ * @author Edgar Meneses
+ * @author Diana Gonzalez
+ *
+ */
 public class Gato extends BuilderAnimal {
 	
+	/**
+	 * raza de gato
+	 */
 	private String raza;
-	
+	/**
+	 * constructr de la clase Gato.java
+	 * @param raza
+	 */
 	public Gato(String raza){
 		
 		super ();
@@ -50,7 +64,9 @@ public class Gato extends BuilderAnimal {
 		String descripcion="Los gatos tienen reproducción sexual con fecundación interna.";
 		animal.setTipoReproduccion(descripcion, TipoReproduccion.oviviparos);
 	}
-
+	/**
+	 * metodo para crear el nombre del animal
+	 */
 	@Override
 	public void crearNombre() {
 		animal.setNombre("Gato " + animal.getRaza());

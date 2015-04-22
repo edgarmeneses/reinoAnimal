@@ -4,7 +4,17 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 
-
+/**
+ * Clase que permite crear los diferentes tipos de animales
+ * 
+ * dentro del patron builder esta es la clase director
+ * esta clase tambien implementa el patron iterator
+ * donde se utiliza collection como el aggrega
+ * 
+ * @author Edgar Meneses
+ * @author Diana Gonzalez
+ *
+ */
 public class ReinoAnimal {
 
 //	private ArrayList<BuilderAnimal> animals;
