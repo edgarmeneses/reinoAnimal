@@ -1,5 +1,10 @@
 package com.reinoanimal.logica;
-
+/**
+ * grupos o tipos de vertebrados
+ * 
+ * @author Edgar Meneses
+ * @author Diana Gonzalez
+ */
 public enum TipoGrupo {
 	/**
 	 * tiene pelos en la superficie del cuerpo. En la mayoría de las especies de

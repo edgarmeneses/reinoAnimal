@@ -1,5 +1,10 @@
 package com.reinoanimal.logica;
-
+/**
+ * Tipos de reproduccion
+ * 
+ * @author Edgar Meneses
+ * @author Diana Gonzalez
+ */
 public enum TipoReproduccion {
 	/**
 	 * los animales ovíparos se forman y desarrollan en el interior de un huevo que ha

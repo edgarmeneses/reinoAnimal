@@ -1,5 +1,10 @@
 package com.reinoanimal.logica;
-
+/**
+ * Tipos de alimentacion
+ * 
+ * @author Edgar Meneses
+ * @author Diana Gonzalez
+ */
 
 public enum TipoAlimentacion {
 	/**
