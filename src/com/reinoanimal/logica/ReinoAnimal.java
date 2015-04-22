@@ -1,58 +1,41 @@
 package com.reinoanimal.logica;
 
-
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
 
 
-public class ReinoAnimal implements AnimalColeccion {
+public class ReinoAnimal {
 
-	private Animal[] animals;
+//	private ArrayList<BuilderAnimal> animals;
+	
+	Collection<BuilderAnimal> animals = new ArrayList<BuilderAnimal>();
 
 	public ReinoAnimal(){
-		
-		animals= new Animal[3];
-		animals[0]= new Animal("Gato..");
-		animals[1]= new Animal("Pero..");
-		animals[2]= new Animal("caballo..");
-		
 
 	}
 
-	@Override
-	public AnimalIterator iterator() {
-		// TODO Auto-generated method stub
-		return new ReinoAnimalAnimalesIterator();
-	}
-	
-	private class ReinoAnimalAnimalesIterator implements AnimalIterator{
+	/**
+	 * metodo para crear un animal
+	 */
+	public void crearAnimal(BuilderAnimal buAn){
 		
-        private int anim = 0;
-        
-        @Override
-        public boolean hasNext() {
-            if(anim < animals.length) {
-                return true;
-            }
-            return false;
-        }
- 
-        @Override
-        public Animal next() {
-            return animals[ anim++ ];
-        }
- 
-        @Override
-        public Animal current() {
-            // TODO Auto-generated method stub
-            return null;
-        }
- 
-        @Override
-        public Animal first() {
-            // TODO Auto-generated method stub
-            return null;
-        }
+		animals.add(new Gato("Persa"));
+		animals.add(new Hamsters("Roborovski"));
+		animals.add(new CaballoDeMar("Arabe"));
+
 	}
 
-
+	public void listarAnimal(){
+		
+		Iterator<BuilderAnimal> iterator = animals.iterator();
+		
+		while (iterator.hasNext()) {
+			
+			System.out.println("Animal:   ");
+			System.out.println(iterator.next());
+			
+		}
+		
+	}
 }//end ReinoAnimal

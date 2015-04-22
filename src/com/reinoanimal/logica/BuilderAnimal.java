@@ -6,7 +6,7 @@ public abstract class BuilderAnimal {
 	protected Animal animal;
 
 	public BuilderAnimal(){
-		animal = new Animal("hh");
+		animal = new Animal();
 	}
 
 	public void finalize() throws Throwable {

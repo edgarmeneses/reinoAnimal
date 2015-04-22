@@ -3,8 +3,6 @@ package com.reinoanimal.logica;
 
 public class Animal {
 	
-	private String nombre;
-
 	/**
 	 * raza del animal
 	 */
@@ -22,8 +20,8 @@ public class Animal {
 	 */
 	private Reproduccion tipoReproduccion;
 
-	public Animal(String nombre){
-		this.nombre=nombre;
+	public Animal(){
+		
 		
 		tipoAlimantacion = new Alimentacion();
 		tipoReproduccion = new Reproduccion();
@@ -62,23 +60,6 @@ public class Animal {
 		this.tipoReproduccion.setDescripcion(descripcion);
 		this.tipoReproduccion.setTipo(tipo);
 	}
-
-	public String getNombre() {
-		return nombre;
-	}
-
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-
-	@Override
-	public String toString() {
-		return "Animal [nombre=" + nombre + ", raza=" + raza
-				+ ", tipoAlimantacion=" + tipoAlimantacion
-				+ ", tipoEstructura=" + tipoEstructura + ", tipoReproduccion="
-				+ tipoReproduccion + "]";
-	}
-
 
 	
 }//end Animal
