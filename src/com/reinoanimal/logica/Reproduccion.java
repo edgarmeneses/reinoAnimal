@@ -1,7 +1,8 @@
 package com.reinoanimal.logica;
 /**
  * Clase que describe el tipo de reprodccion de los animales ingresados 
- *
+ *@author Edgar Meneses
+ * @author Diana Gonzalez
  */
 
 public class Reproduccion {

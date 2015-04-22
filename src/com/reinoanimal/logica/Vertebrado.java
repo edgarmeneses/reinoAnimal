@@ -2,7 +2,8 @@ package com.reinoanimal.logica;
 
 /**
  * Clase que describe la estructura de los animales 
- *
+ * @author Edgar Meneses
+ * @author Diana Gonzalez
  */
 
 public class Vertebrado extends Estructura {
