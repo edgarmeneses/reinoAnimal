@@ -35,4 +35,11 @@ public abstract class BuilderAnimal {
 	 * metodo para crear el tipo de reproduccion
 	 */
 	public abstract void crearReproduccion();
+
+	@Override
+	public String toString() {
+		return  animal.toString();
+	}
+	
+	
 }//end BuilderAnimal

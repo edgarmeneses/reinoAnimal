@@ -10,6 +10,10 @@ public class Hamsters extends BuilderAnimal {
 	public Hamsters(String raza){
 		super();
 		this.raza = raza;
+		crearAlimentacion();
+		crearEstructura();
+		crearRaza();
+		crearReproduccion();
 	}
 	
 	/**

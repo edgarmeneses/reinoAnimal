@@ -12,6 +12,10 @@ public class CaballoDeMar extends BuilderAnimal {
 	public CaballoDeMar(String razo){
 		super();
 		this.raza=razo;
+		crearAlimentacion();
+		crearEstructura();
+		crearRaza();
+		crearReproduccion();
 	}
 
 	
