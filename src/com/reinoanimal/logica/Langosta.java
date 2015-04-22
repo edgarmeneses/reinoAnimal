@@ -1,5 +1,14 @@
 package com.reinoanimal.logica;
-
+/**
+ * Clase langosta hace referencia a un animal especifico
+ * hereda de BuderAnmal 
+ * 
+ * dentro del patron builder hace referencia al cocretBuilder
+ * 
+ * @author Edgar Meneses
+ * @author Diana Gonzalez
+ *
+ */
 public class Langosta extends BuilderAnimal{
 
 	private String raza;

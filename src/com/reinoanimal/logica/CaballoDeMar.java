@@ -1,5 +1,13 @@
 package com.reinoanimal.logica;
-
+/**
+ * Animal especifico
+ * hereda de BuilderAnimal
+ * 
+ * dentro del patron Builder es el concreteBuilder
+ * 
+ * @author Edgar Meneses
+ * @author Diana Gonzalez
+ */
 public class CaballoDeMar extends BuilderAnimal {
 	
 	private String raza;

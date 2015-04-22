@@ -1,6 +1,15 @@
 package com.reinoanimal.logica;
 
-
+/**
+ * calase que hace referencia a un aimal especifico 
+ * hereda de BuilderAnimal
+ * 
+ * dentro del patron builder es un BuilderConcret
+ * 
+ * @author Edgar Meneses
+ * @author Diana Gonzalez
+ *
+ */
 public class Hamsters extends BuilderAnimal {
 	private String raza ;
 	public Hamsters(String raza){
