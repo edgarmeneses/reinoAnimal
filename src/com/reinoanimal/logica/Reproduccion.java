@@ -1,10 +1,16 @@
 package com.reinoanimal.logica;
-
+/**
+ * Clase que describe el tipo de reprodccion de los animales ingresados 
+ *
+ */
 
 public class Reproduccion {
 
 	private String descripcion;
 	private TipoReproduccion tipo;
+/**
+ * Metodo constructor de la clase, con sus getter y setters correspondientes
+ */
 
 	public Reproduccion(){
 
