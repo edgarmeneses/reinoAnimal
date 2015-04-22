@@ -38,4 +38,10 @@ public class ReinoAnimal {
 		}
 		
 	}
+
+	public Collection<BuilderAnimal> getAnimals() {
+		return animals;
+	}
+	
+	
 }//end ReinoAnimal
