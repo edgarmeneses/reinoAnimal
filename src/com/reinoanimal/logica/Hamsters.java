@@ -21,7 +21,7 @@ public class Hamsters extends BuilderAnimal {
 	 */
 	public void crearAlimentacion(){
 		String descripcion = "Estos Animales se alimentan de vegetales, carnes y cereales";
-		animal.setTipoAlimantacion(new Alimentacion(descripcion, TipoAlimentacion.omnivoros));
+		animal.setTipoAlimantacion(descripcion, TipoAlimentacion.omnivoros);
 	}
 
 	/**
@@ -43,6 +43,6 @@ public class Hamsters extends BuilderAnimal {
 	 */
 	public void crearReproduccion(){
 		String descripcion = "Se realiza a travez de copulacion";
-		animal.setTipoReproduccion(new Reproduccion(descripcion, TipoReproduccion.viviparos));
+		animal.setTipoReproduccion(descripcion, TipoReproduccion.viviparos);
 	}
 }//end Hamsters

@@ -25,7 +25,8 @@ public class Animal {
 	private Reproduccion tipoReproduccion;
 
 	public Animal(){
-
+		tipoAlimantacion = new Alimentacion();
+		tipoReproduccion = new Reproduccion();
 	}
 
 	public String getRaza() {
@@ -40,8 +41,9 @@ public class Animal {
 		return tipoAlimantacion;
 	}
 
-	public void setTipoAlimantacion(Alimentacion tipoAlimantacion) {
-		this.tipoAlimantacion = tipoAlimantacion;
+	public void setTipoAlimantacion(String descripcion, TipoAlimentacion tipo) {
+		this.tipoAlimantacion.setDescripcion(descripcion);
+		this.tipoAlimantacion.setTipo(tipo);
 	}
 
 	public Estructura getTipoEstructura() {
@@ -56,8 +58,9 @@ public class Animal {
 		return tipoReproduccion;
 	}
 
-	public void setTipoReproduccion(Reproduccion tipoReproduccion) {
-		this.tipoReproduccion = tipoReproduccion;
+	public void setTipoReproduccion(String descripcion, TipoReproduccion tipo) {
+		this.tipoReproduccion.setDescripcion(descripcion);
+		this.tipoReproduccion.setTipo(tipo);
 	}
 
 	@Override

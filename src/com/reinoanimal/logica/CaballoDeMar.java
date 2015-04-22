@@ -24,7 +24,7 @@ public class CaballoDeMar extends BuilderAnimal {
 	 */
 	public void crearAlimentacion(){
 		String caracteristica = "Se alimentan de pequeños organismos pelágicos que cazan al acecho, camuflados entre las algas, y que succionan con sus largos hocicos.";
-		animal.setTipoAlimantacion(new Alimentacion(caracteristica, TipoAlimentacion.carnivoro));
+		animal.setTipoAlimantacion(caracteristica, TipoAlimentacion.carnivoro);
 	}
 
 	/**
@@ -47,6 +47,6 @@ public class CaballoDeMar extends BuilderAnimal {
 	 */
 	public void crearReproduccion(){
 		String descripcion = "Se reproducen desde la primavera hasta los meses de verano, En esta epoco la hembra transpasa los huevos a la bolsa ventral de los machos";
-		animal.setTipoReproduccion(new Reproduccion(descripcion, TipoReproduccion.oviparos));
+		animal.setTipoReproduccion(descripcion, TipoReproduccion.oviparos);
 	}
 }//end CaballoDeMar
