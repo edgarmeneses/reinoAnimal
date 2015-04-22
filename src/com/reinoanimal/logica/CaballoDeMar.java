@@ -6,14 +6,12 @@ package com.reinoanimal.logica;
  * @created 21-abr-2015 10:21:29 p.m.
  */
 public class CaballoDeMar extends BuilderAnimal {
-
+	
 	public CaballoDeMar(){
-
+		
 	}
 
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
+	
 	/**
 	 * metodo para crear el tipo de alimentacion
 	 */

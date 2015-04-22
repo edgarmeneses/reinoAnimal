@@ -14,6 +14,14 @@ public class Reproduccion {
 
 	}
 
+	public Reproduccion(String descripcion, TipoReproduccion tipo) {
+		super();
+		this.descripcion = descripcion;
+		this.tipo = tipo;
+	}
+
+
+
 	public void finalize() throws Throwable {
 
 	}

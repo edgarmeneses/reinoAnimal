@@ -11,10 +11,14 @@ public class Alimentacion {
 	private TipoAlimentacion tipo;
 
 	public Alimentacion(){
-
+		
 	}
 
-	public void finalize() throws Throwable {
-
+	public Alimentacion(String descripcion, TipoAlimentacion tipo) {
+		super();
+		this.descripcion = descripcion;
+		this.tipo = tipo;
 	}
+
+	
 }//end Alimentacion

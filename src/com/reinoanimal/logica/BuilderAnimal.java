@@ -7,7 +7,7 @@ package com.reinoanimal.logica;
  */
 public abstract class BuilderAnimal {
 
-	private Animal animal;
+	protected Animal animal;
 
 	public BuilderAnimal(){
 

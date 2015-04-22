@@ -14,7 +14,10 @@ public abstract class Estructura {
 
 	}
 
-	public void finalize() throws Throwable {
-
+	public Estructura(String caracteristica, String nombre) {
+		this.caracteristica = caracteristica;
+		this.nombre = nombre;
 	}
+	
+	
 }//end Estructura
