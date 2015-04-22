@@ -15,10 +15,18 @@ public class Alimentacion {
 	}
 
 	public Alimentacion(String descripcion, TipoAlimentacion tipo) {
-		super();
+
 		this.descripcion = descripcion;
 		this.tipo = tipo;
 	}
+
+	@Override
+	public String toString() {
+		return "Alimentacion [descripcion=" + descripcion + ", tipo=" + tipo
+				+ "]";
+	}
+	
+	
 
 	
 }//end Alimentacion

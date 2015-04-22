@@ -28,7 +28,44 @@ public class Animal {
 
 	}
 
-	public void finalize() throws Throwable {
-
+	public String getRaza() {
+		return raza;
 	}
+
+	public void setRaza(String raza) {
+		this.raza = raza;
+	}
+
+	public Alimentacion getTipoAlimantacion() {
+		return tipoAlimantacion;
+	}
+
+	public void setTipoAlimantacion(Alimentacion tipoAlimantacion) {
+		this.tipoAlimantacion = tipoAlimantacion;
+	}
+
+	public Estructura getTipoEstructura() {
+		return tipoEstructura;
+	}
+
+	public void setTipoEstructura(Estructura tipoEstructura) {
+		this.tipoEstructura = tipoEstructura;
+	}
+
+	public Reproduccion getTipoReproduccion() {
+		return tipoReproduccion;
+	}
+
+	public void setTipoReproduccion(Reproduccion tipoReproduccion) {
+		this.tipoReproduccion = tipoReproduccion;
+	}
+
+	@Override
+	public String toString() {
+		return "Animal [raza=" + raza +"\n"+ ", tipoAlimantacion="
+				+ tipoAlimantacion + "\n"+ ", tipoEstructura=" + tipoEstructura
+				+ "\n"+", tipoReproduccion=" + tipoReproduccion + "]";
+	}
+	
+	
 }//end Animal

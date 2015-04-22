@@ -19,8 +19,19 @@ public class Vertebrado extends Estructura {
 	public Vertebrado(){
 		super(DEFAULT_CARACTERISTICA, DEFAULT_NOMBRE);
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
+	
+	public TipoGrupo getGrupo() {
+		return grupo;
 	}
+
+	public void setGrupo(TipoGrupo grupo) {
+		this.grupo = grupo;
+	}
+
+	@Override
+	public String toString() {
+		return "Vertebrado [grupo=" + grupo + "]";
+	}
+	
+	
 }//end Vertebrado

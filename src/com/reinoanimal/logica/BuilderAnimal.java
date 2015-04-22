@@ -10,7 +10,7 @@ public abstract class BuilderAnimal {
 	protected Animal animal;
 
 	public BuilderAnimal(){
-
+		animal = new Animal();
 	}
 
 	public void finalize() throws Throwable {

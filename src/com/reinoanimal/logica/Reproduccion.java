@@ -20,9 +20,26 @@ public class Reproduccion {
 		this.tipo = tipo;
 	}
 
-
-
-	public void finalize() throws Throwable {
-
+	public String getDescripcion() {
+		return descripcion;
 	}
+
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
+
+	public TipoReproduccion getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(TipoReproduccion tipo) {
+		this.tipo = tipo;
+	}
+
+	@Override
+	public String toString() {
+		return "Reproduccion [descripcion=" + descripcion + ", tipo=" + tipo
+				+ "]";
+	}
+	
 }//end Reproduccion
